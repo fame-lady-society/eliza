@@ -16,7 +16,7 @@ jobs:
             - name: Set up Node.js
               uses: actions/setup-node@v3
               with:
-                  node-version: "23"
+                  node-version: "22"
             - name: Install Dependencies (canvas)
               run: |
                   sudo apt update
@@ -24,9 +24,6 @@ jobs:
             - name: Install dependencies (CDK)
               run: npm install -g pnpm && pnpm install
               working-directory: deploy/
-
-            - name: Install dependencies (App)
-              run: pnpm install
 
             - name: Install AWS CDK
               run: npm install -g aws-cdk
