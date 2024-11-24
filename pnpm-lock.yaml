@@ -889,6 +889,73 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(typescript@5.6.3)
 
+  packages/eliza-starter:
+    dependencies:
+      '@ai16z/adapter-postgres':
+        specifier: workspace:*
+        version: link:../adapter-postgres
+      '@ai16z/adapter-sqlite':
+        specifier: workspace:*
+        version: link:../adapter-sqlite
+      '@ai16z/client-auto':
+        specifier: workspace:*
+        version: link:../client-auto
+      '@ai16z/client-direct':
+        specifier: workspace:*
+        version: link:../client-direct
+      '@ai16z/client-discord':
+        specifier: workspace:*
+        version: link:../client-discord
+      '@ai16z/client-telegram':
+        specifier: workspace:*
+        version: link:../client-telegram
+      '@ai16z/client-twitter':
+        specifier: workspace:*
+        version: link:../client-twitter
+      '@ai16z/eliza':
+        specifier: workspace:*
+        version: link:../core
+      '@ai16z/plugin-bootstrap':
+        specifier: workspace:*
+        version: link:../plugin-bootstrap
+      '@ai16z/plugin-image-generation':
+        specifier: workspace:*
+        version: link:../plugin-image-generation
+      '@ai16z/plugin-node':
+        specifier: workspace:*
+        version: link:../plugin-node
+      '@ai16z/plugin-solana':
+        specifier: workspace:*
+        version: link:../plugin-solana
+      '@ai16z/plugin-starknet':
+        specifier: workspace:*
+        version: link:../plugin-starknet
+      '@ai16z/plugin-video-generation':
+        specifier: workspace:*
+        version: link:../plugin-video-generation
+      better-sqlite3:
+        specifier: ^11.5.0
+        version: 11.5.0
+      readline:
+        specifier: ^1.3.0
+        version: 1.3.0
+      ws:
+        specifier: ^8.18.0
+        version: 8.18.0(bufferutil@4.0.8)(utf-8-validate@5.0.10)
+      yargs:
+        specifier: 17.7.2
+        version: 17.7.2
+    devDependencies:
+      ts-node:
+        specifier: 10.9.2
+        version: 10.9.2(@swc/core@1.9.3(@swc/helpers@0.5.15))(@types/node@22.8.4)(typescript@5.6.3)
+      tsup:
+        specifier: ^8.3.5
+        version: 8.3.5(@swc/core@1.9.3(@swc/helpers@0.5.15))(jiti@2.4.0)(postcss@8.4.49)(typescript@5.6.3)(yaml@2.6.1)
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
+
   packages/plugin-bootstrap:
     dependencies:
       '@ai16z/eliza':
